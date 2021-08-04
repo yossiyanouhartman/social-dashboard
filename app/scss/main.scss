@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// Abstracts
+@import 'abstracts/variables';
 
-html {
-	font-family: 'Inter', sans-serif;
-	font-size: 100%;
-	box-sizing: border-box;
-}
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
+// Components
+@import 'components/page-title';
+@import 'components/toggle';
 
-.c-header {
-}
+// Layout
+@import 'layout/wrapper';
+@import 'layout/header';

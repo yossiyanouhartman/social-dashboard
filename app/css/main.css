@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 html {
-  font-family: 'Inter', sans-serif;
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,5 +10,114 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1rem;
+}
+
+.c-page-title__title {
+  margin-bottom: 15px;
+}
+
+.c-page-title__followers {
+  font-weight: 700;
+}
+
+@use '../abstracts/variables';
+.c-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.c-toggle__text {
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.c-toggle__slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+  border-radius: 50px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.c-toggle__slider::before {
+  content: "";
+  width: calc(25px - (3px * 2));
+  height: calc(25px - (3px * 2));
+  background: #aeb3cb;
+  border-radius: 50%;
+  margin-left: calc((25px - calc(25px - (3px * 2))) / 2);
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.c-toggle__slider:checked::before {
+  -webkit-transform: translateX(calc(50px - calc(25px - (3px * 2)) - 6px));
+          transform: translateX(calc(50px - calc(25px - (3px * 2)) - 6px));
+  background: white;
+}
+
+.l-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1460px;
+  min-width: 375px;
+}
+
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */

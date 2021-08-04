@@ -13,22 +13,53 @@
 
 <body>
 
-    <header class="l-header">
-        <div class="l-header__item">
-            <h1 class="c-header__title">Social Media Dashboard</h1>
-            <p class="c-header__total-followers">Total Followers: 23,004</p>
+    <div class="l-wrapper">
+
+        <header class="l-header">
+
+            <div class="l-header__item">
+
+                <div class="c-page-title">
+                    <h1 class="c-page-title__title">Social Media Dashboard</h1>
+                    <p class="c-page-title__followers">Total Followers: 23,004</p>
+                </div>
+            </div>
+
+            <div class="l-header__item">
+
+                <div class="c-toggle">
+                    <label class="c-toggle__text" for="slider">Dark Mode </label>
+                    <input class="c-toggle__slider" type="checkbox" name="slider" checked>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="l-headline">
+            <div class="l-headline__item">
+
+                <div class="c-social-card">
+                    <div class="c-social-card__social-box">
+                        <img class="c-social-card__social-icon">
+                        <p class="c-social-card__social-username">@yossiyanouhartman</p>
+                    </div>
+                    <h1 class="c-social-card__count">1987</h1>
+                    <div class="c-social-card__social-description">Followers</div>
+                    <p class="c-social-card__social-progress">12 Today</p>
+                </div>
+
+            </div>
+
+            <div class="l-headline__item"></div>
+            <div class="l-headline__item"></div>
+            <div class="l-headline__item"></div>
         </div>
 
-        <div class="l-header__item">
-            <label class="c-toggle">
-                <span class="c-toggle__text">Dark Mode</span>
-                <div class="c-toggle__switch">
-                    <input class="c-toggle_checkbox" type="checkbox" checked>
-                    <span class="c-toggle__slider"></span>
-                </div>
-            </label>
-        </div>
-    </header>
+    </div>
+
+
+
 
     <script src="js/script.js"></script>
 </body>

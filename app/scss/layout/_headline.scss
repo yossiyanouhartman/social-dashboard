@@ -1,0 +1,11 @@
+.l-headline {
+	display: flex;
+	justify-content: space-between;
+	gap: 2%;
+
+	&__item {
+		max-width: 300px;
+		min-width: 200px;
+		width: 100%;
+	}
+}

@@ -1,7 +1,8 @@
 .l-headline {
 	display: flex;
 	justify-content: space-between;
-	gap: 2%;
+	gap: 20px;
+	padding: 50px 0;
 
 	&__item {
 		max-width: 300px;

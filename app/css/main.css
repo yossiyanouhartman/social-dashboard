@@ -14,6 +14,11 @@ html {
   padding: 0;
 }
 
+body {
+  position: relative;
+  height: 100vh;
+}
+
 html {
   font-family: 'Inter', sans-serif;
 }
@@ -24,8 +29,17 @@ h1 {
   color: #1e202a;
 }
 
+h2 {
+  font-weight: 700;
+  color: #1e202a;
+}
+
 p {
   font-size: 14px;
+  color: #63687e;
+}
+
+label {
   color: #63687e;
 }
 
@@ -45,11 +59,14 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-toggle__text {
   margin-right: 15px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -211,10 +228,87 @@ p {
           transform: translateY(-2px);
 }
 
+.c-progress-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template: 1fr 1fr / 2fr 1fr;
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+  row-gap: 10px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #f0f2fa;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+  cursor: pointer;
+}
+
+.c-progress-card:hover {
+  background-color: #e5e8f6;
+}
+
+.c-progress-card__title {
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-progress-card__icon {
+  height: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.c-progress-card__progress {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-weight: 700;
+}
+
+.c-progress-card__progress--increase {
+  color: #1db489;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c-progress-card__progress--increase::before {
+  content: url("/app/images/icon-up.svg");
+  margin-right: 5px;
+  display: block;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.c-progress-card__progress--decrease {
+  color: #dc414c;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c-progress-card__progress--decrease::before {
+  content: url("/app/images/icon-down.svg");
+  margin-right: 5px;
+  display: block;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 .l-wrapper {
   display: block;
   margin: 0 auto;
   width: 80%;
+  height: 100%;
   max-width: 1460px;
   min-width: 375px;
 }
@@ -229,7 +323,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .l-headline {
@@ -239,12 +333,36 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 2%;
+  gap: 20px;
+  padding: 50px 0;
 }
 
 .l-headline__item {
   max-width: 300px;
   min-width: 200px;
+  width: 100%;
+}
+
+.l-overview {
+  padding: 0 0 50px;
+}
+
+.l-overview__heading {
+  padding-bottom: 20px;
+}
+
+.l-overview__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.l-overview__content div {
+  min-width: 200px;
+  max-width: 300px;
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+.l-overview {
+	padding: 0 0 50px;
+	&__heading {
+		padding-bottom: 20px;
+	}
+
+	&__content {
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+		gap: 20px;
+
+		div {
+			min-width: 200px;
+			max-width: 300px;
+			width: 100%;
+		}
+	}
+}

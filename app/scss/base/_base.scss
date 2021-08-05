@@ -1,9 +1,11 @@
+@use '../abstracts/variables';
+
 h1 {
 	font-weight: 700;
-	line-height: 1rem;
+	color: $light-theme-dark-text;
 }
 
 p {
 	font-size: 14px;
-	line-height: 1rem;
+	color: $light-theme-text;
 }

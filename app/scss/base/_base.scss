@@ -5,7 +5,16 @@ h1 {
 	color: $light-theme-dark-text;
 }
 
+h2 {
+	font-weight: 700;
+	color: $light-theme-dark-text;
+}
+
 p {
 	font-size: 14px;
+	color: $light-theme-text;
+}
+
+label {
 	color: $light-theme-text;
 }

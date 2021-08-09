@@ -11,27 +11,21 @@
     <title>Social Media Dashboard</title>
 </head>
 
-<body>
+<body class="theme theme--dark">
 
     <div class="l-wrapper">
 
+
         <header class="l-header">
 
-            <div class="l-header__item">
-
-                <div class="c-page-title">
-                    <h1 class="c-page-title__title">Social Media Dashboard</h1>
-                    <p class="c-page-title__followers">Total Followers: 23,004</p>
-                </div>
+            <div class="c-page-title">
+                <h1 class="c-page-title__title">Social Media Dashboard</h1>
+                <p class="c-page-title__followers">Total Followers: 23,004</p>
             </div>
 
-            <div class="l-header__item">
-
-                <div class="c-toggle">
-                    <label class="c-toggle__text" for="slider">Dark Mode </label>
-                    <input class="c-toggle__slider" type="checkbox" name="slider" checked>
-                </div>
-
+            <div class="c-toggle">
+                <label class="c-toggle__text" for="slider">Dark Mode </label>
+                <input class="c-toggle__slider" type="checkbox" name="slider" onclick="toggleDarkTheme()">
             </div>
 
         </header>

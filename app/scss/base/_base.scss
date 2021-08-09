@@ -1,12 +1,8 @@
 @use '../abstracts/variables';
 
-h1 {
-	font-weight: 700;
-	color: $light-theme-dark-text;
-}
-
+h1,
 h2 {
-	font-weight: 700;
+	font-size: 2rem;
 	color: $light-theme-dark-text;
 }
 
